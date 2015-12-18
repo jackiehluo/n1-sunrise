@@ -1,0 +1,53 @@
+@import "variables";
+
+#account-switcher {
+  border-bottom: 0px !important;
+
+  .dropdown {
+    border: 0px !important;
+  }
+}
+
+.account-sidebar-sections {
+  background-color: #2d3c52 !important;
+
+  section {
+    .item-container {
+      margin: 0 10px !important;
+
+      .disclosure-triangle {
+        display: none;
+      }
+
+      .item {
+        padding: 0 10px !important;
+        color: @white !important;
+        cursor: pointer !important;
+
+        .item-count-box {
+          background: transparent !important;
+          color: @sunrise-light !important;
+          box-shadow: 0 0.5px 0 @sunrise-light, 0 -0.5px 0 @sunrise-light, 0.5px 0 0 @sunrise-light, -0.5px 0 0 @sunrise-light !important;
+        }
+
+        &.selected {
+          background: @sunrise-accent !important;
+          border-radius: @base-border-radius;
+          color: @white !important;
+
+          .item-count-box {
+            background: transparent !important;
+            color: @white !important;
+            box-shadow: 0 0.5px 0 @white, 0 -0.5px 0 @white, 0.5px 0 0 @white, -0.5px 0 0 @white !important;
+          }
+
+          .icon {
+            img {
+              background: @white !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

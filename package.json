@@ -1,0 +1,12 @@
+{
+  "name": "N1-Sunrise",
+  "theme": "Sunrise",
+  "version": "0.0.1",
+  "description": "Sunrise Theme for N1",
+  "license": "GPL-3.0",
+  "engines": {
+    "nylas": "*"
+  },
+  "styleSheets": ["controls", "email-frame", "sidebar", "threads", "notifications"],
+  "private": true
+}
