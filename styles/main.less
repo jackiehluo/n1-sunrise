@@ -1,11 +1,15 @@
 @import "variables";
 
 a {
-  color: @ac;
+  color: @ac !important;
 }
 
 div[name=Center] {
   margin-top: -50px;
+}
+
+.mode-toggle.mode-false .content-mask {
+  background-color: @ac;
 }
 
 .column-ThreadList, .column-MessageListSidebar {
@@ -16,8 +20,7 @@ div[name=Center] {
   width: 10px;
   background: none;
   border: none;
-}
-
-.scrollbar-track .scrollbar-handle {
-  background: none;
+  .scrollbar-handle {
+    background: none;
+  }
 }
