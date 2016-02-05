@@ -1,13 +1,17 @@
-/**
- * Colors
- */
-@sunrise-light: darken(#A3ACB1, 10%);
-@sunrise-lighter: #F0F7FA;
-@sunrise-dark: darken(#727C83, 4%);
-@sunrise-accent: #ff616d;
-@white: #ffffff;
+@bgc: #ffffff;
+@ac: #ff616d;
 
-/**
- * Borders
- */
-@base-border-radius: 4px;
+@keyframes slideIn {
+  0% { transform: translate3d(-20px, 0, 0); opacity: 0; }
+  100% { transform: translate3d(0, 0, 0); opacity: 1; }
+};
+
+@keyframes slideUp {
+  0% { transform: translate3d(0, 30px, 0); opacity: 0; }
+  100% { transform: translate3d(0, 0, 0); opacity: 1; }
+};
+
+@keyframes slideLeft {
+  0% { transform: translate3d(13px, 0, 0); opacity: 0; }
+  100% { transform: translate3d(0, 0, 0); opacity: 1; }
+};

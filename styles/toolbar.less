@@ -1,0 +1,49 @@
+@import "variables";
+
+.sheet-toolbar {
+  border: none;
+}
+
+.sheet-toolbar-container {
+  background: #f4f4f4;
+}
+
+.btn-toolbar {
+  border-radius: 1200px;
+  height: 40px;
+}
+
+.btn-toolbar, .sheet-toolbar .btn-toolbar {
+  &:not(.btn-emphasis) {
+    position: relative;
+    box-shadow: none;
+    background: #fff;
+    cursor: pointer;
+    &:hover {
+      background: #eaeaea;
+      &:before {
+        opacity: 1;
+        bottom: -5px;
+      }
+      &:after {
+        opacity: 1;
+        bottom: -5px;
+      }
+      .content-mask {
+        transform: translate3d(0, -2px, 0);
+      }
+    }
+    .content-mask {
+      transition: transform 0.2s ease-out;
+    }
+  }
+}
+
+input[type="text"].input-bordered, input[type="email"].input-bordered, input[type="date"].input-bordered, input[type="datetime"].input-bordered, input[type="datetime-local"].input-bordered, input[type="month"].input-bordered, input[type="number"].input-bordered, input[type="password"].input-bordered, input[type="range"].input-bordered, input[type="search"].input-bordered, input[type="tel"].input-bordered, input[type="time"].input-bordered, input[type="url"].input-bordered, input.empty {
+  border: 0px !important;
+}
+
+textarea:focus, input[type="text"]:focus, input[type="email"]:focus {
+  border: 1px solid @ac;
+  box-shadow: 0 0 1.5px @ac;
+}

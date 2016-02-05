@@ -1,5 +1,5 @@
 {
-  "name": "N1-Sunrise",
+  "name": "Sunrise",
   "theme": "Sunrise",
   "version": "0.0.1",
   "description": "Sunrise Theme for N1",
@@ -7,6 +7,6 @@
   "engines": {
     "nylas": "*"
   },
-  "styleSheets": ["controls", "email-frame", "account-sidebar", "threads", "notifications"],
+  "styleSheets": ["account-sidebar", "composer", "mailbox", "main", "message", "preferences", "sidebar", "toolbar"],
   "private": true
 }

@@ -1,5 +1,5 @@
 # Sunrise for N1
-A sunrise-tinted theme for N1.
+A sunrise theme for N1, inspired heavily by [Wattenberger](https://github.com/Wattenberger/Nylas-N1-theme).
 
 ![](preview.png)
 

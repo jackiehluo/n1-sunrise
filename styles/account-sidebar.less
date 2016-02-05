@@ -1,53 +1,59 @@
 @import "variables";
 
-#account-switcher {
-  border-bottom: 0px !important;
-
-  .dropdown {
-    border: 0px !important;
-  }
+.flexbox-handle-horizontal div {
+  border: none;
 }
 
-.account-sidebar-sections {
-  background-color: #2d3c52 !important;
+.column-RootSidebar {
+  padding-top: 50px;
+  padding-left: 5px;
+  min-width: 127px;
+}
 
-  section {
-    .item-container {
-      margin: 0 10px !important;
+#account-switcher, .sidebar-activity {
+  background: rgba(255,255,255,0.1);
+  color: rgba(200, 200, 200, 0.7);
+  border: none;
+  box-shadow: none;
+}
 
-      .disclosure-triangle {
-        display: none;
-      }
+.sidebar-activity .item {
+  border: none;
+}
 
-      .item {
-        padding: 0 10px !important;
-        color: @white !important;
-        cursor: pointer !important;
+#account-switcher .item.selected, #account-sidebar .item.selected {
+  background: none;
+  color: #fff;
+  font-weight: 800;
+}
 
-        .item-count-box {
-          background: transparent !important;
-          color: @sunrise-light !important;
-          box-shadow: 0 0.5px 0 @sunrise-light, 0 -0.5px 0 @sunrise-light, 0.5px 0 0 @sunrise-light, -0.5px 0 0 @sunrise-light !important;
-        }
+#account-switcher .item, #account-sidebar .item {
+  color: rgba(200,200,200,0.7);
+  cursor: pointer;
+}
 
-        &.selected {
-          background: @sunrise-accent !important;
-          border-radius: @base-border-radius;
-          color: @white !important;
+#account-switcher .item-container, #account-sidebar .item-container {
+  cursor: pointer;
+}
 
-          .item-count-box {
-            background: transparent !important;
-            color: @white !important;
-            box-shadow: 0 0.5px 0 @white, 0 -0.5px 0 @white, 0.5px 0 0 @white, -0.5px 0 0 @white !important;
-          }
+#account-switcher .item-container, #account-sidebar .item-container:hover {
+  background: rgba(255,255,255,0.1);
+}
 
-          .icon {
-            img {
-              background: @white !important;
-            }
-          }
-        }
-      }
-    }
-  }
+#account-switcher .heading, #account-sidebar .heading {
+  color: rgba(200,200,200,0.7);
+  font-size: 10px;
+  letter-spacing: 0.03em;
+}
+
+#account-switcher .item .unread, #account-sidebar .item .unread {
+  background: rgba(200,200,200,0.1);
+}
+
+.sidebar-activity {
+  font-size: 11px;
+}
+
+.disclosure-triangle div {
+  border-left: 7px solid rgba(35, 31, 32, 0.2);
 }
