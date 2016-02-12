@@ -29,8 +29,16 @@ body.is-blurred {
   border-bottom: 1px solid rgba(221, 221, 221, 0.1);
 }
 
+.thread-list .unread:not(.focused):not(.selected):not(.next-is-selected), .draft-list .unread:not(.focused):not(.selected):not(.next-is-selected) {
+  border-bottom: 1px solid rgba(221, 221, 221, 0.2) !important;
+}
+
 .list-container .list-item.focused {
   border-bottom: none !important;
+}
+
+.list-container .list-item.selected {
+  border-bottom: 1px solid rgba(221, 221, 221, 0.1) !important;
 }
 
 .thread-list .list-column, .draft-list .list-column, .list-container .list-item.focused .list-column {
