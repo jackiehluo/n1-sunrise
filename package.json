@@ -1,13 +1,13 @@
 {
   "name": "Sunrise",
   "displayName": "Sunrise",
-  "theme": "Sunrise",
+  "theme": "ui",
   "version": "0.0.1",
   "description": "Sunrise Theme for N1",
   "license": "GPL-3.0",
   "engines": {
     "nylas": "*"
   },
-  "styleSheets": ["account-sidebar", "composer", "mailbox", "main", "message", "preferences", "sidebar", "toolbar"],
+  "styleSheets": ["account-sidebar", "composer", "mailbox", "main", "message", "sidebar", "toolbar"],
   "private": true
 }
