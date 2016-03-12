@@ -1,9 +1,10 @@
 {
-  "name": "Sunrise",
+  "name": "sunrise",
+  "title": "Sunrise",
   "displayName": "Sunrise",
   "theme": "ui",
   "version": "0.0.1",
-  "description": "Sunrise Theme for N1",
+  "description": "A sunrise-tinted theme for N1.",
   "license": "GPL-3.0",
   "engines": {
     "nylas": "*"
