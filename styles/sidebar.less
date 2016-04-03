@@ -1,5 +1,9 @@
 @import "variables";
 
+.column-MessageListSidebar {
+  background: #fafafa;
+}
+
 .sidebar-section.visible {
   animation: slideLeft 0.3s ease-out;
 }
@@ -12,14 +16,17 @@
   background: #fafafa;
 }
 
-.contact-card-fullcontact h1.name {
-  padding-bottom: 2px;
-}
-
-.contact-card-fullcontact .email {
-  font-size: 13px;
-  word-break: normal;
-  opacity: 0.3;
+.related-threads {
+  background-color: rgba(200, 200, 200, 0.2);
+  .subject, .timestamp {
+    color: @text-color-very-subtle;
+  }
+  .toggle {
+    color: @ac;
+  }
+  .related-thread:hover {
+    background-color: lighten(rgba(200, 200, 200, 0.4), 40%);
+  }
 }
 
 .sidebar-no-info {
@@ -28,8 +35,4 @@
 
 .sidebar-section h2 {
   border: none;
-}
-
-.column-MessageListSidebar {
-  background: #fafafa;
 }
